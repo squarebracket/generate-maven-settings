@@ -1,0 +1,16 @@
+name: 'generate maven settings.xml programmatically'
+description: |
+  creates a settings.xml file for maven at runtime that injects username
+  and password for repositories listed in the project's pom.xml
+inputs:
+  username:
+    description: The username to use for the repositories
+  password:
+    description: The password to use for the repositories
+  filter:
+    description: |
+      The (optional) regex to use to filter for repositories to which
+      credentials should be added
+runs:
+  using: 'node12'
+  main: 'lib/main.js'

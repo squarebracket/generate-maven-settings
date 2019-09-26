@@ -1,0 +1,12 @@
+{
+  "name": "generate-maven-settings",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "xml2js": "^0.4.22"
+  }
+}
